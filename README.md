@@ -48,7 +48,7 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] Get lambda expression working using https://github.com/evant/gradle-retrolambda
 
 ## Video Walkthrough
 
