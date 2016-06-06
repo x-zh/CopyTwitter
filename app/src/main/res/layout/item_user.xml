@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/ivProfileBg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/material_deep_teal_200" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivProfileImage"
+        android:layout_below="@+id/ivProfileBg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/design_textinput_error_color_light" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivProfileImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingBottom="@dimen/normal_margin"
+        android:nestedScrollingEnabled="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="James Bond"
+            android:id="@+id/tvName"
+            style="@style/MainFont"
+            android:layout_below="@+id/ivProfileImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="\@jamesbond"
+            android:id="@+id/tvScreenName"
+            android:layout_below="@+id/tvName"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio."
+            android:id="@+id/tvDescription"
+            android:layout_below="@+id/tvScreenName"
+            android:layout_alignLeft="@+id/tvScreenName"
+            android:layout_alignStart="@+id/tvScreenName"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_below="@+id/tvDescription"
+            android:layout_alignLeft="@+id/tvDescription"
+            android:layout_alignStart="@+id/tvDescription">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="255"
+                android:id="@+id/tvFollowingCount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOLLOWING"
+                style="@style/MainFont.Muted"
+                android:layout_marginLeft="@dimen/narrow_margin"
+                android:id="@+id/tvFollowing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10086"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/tvFollowersCount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/narrow_margin"
+                style="@style/MainFont.Muted"
+                android:text="FOLLOWERS"
+                android:id="@+id/tvFollowers" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
